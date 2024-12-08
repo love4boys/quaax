@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Vídeo</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        video {
+            max-width: 90%;
+            max-height: 80%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <video id="videoPlayer" controls autoplay>
+        <source src="Assets/video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <script>
+        const video = document.getElementById('videoPlayer');
+        video.onended = function() {
+            window.location.href = "https://s.shopee.com.br/9A82LVvbl3"; // Substitua pelo link do seu produto
+        };
+    </script>
+</body>
+</html>
